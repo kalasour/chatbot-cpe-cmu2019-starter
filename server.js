@@ -23,7 +23,7 @@ app.post('/webhook', middleware(config), (req, res) => {
     console.log(message);
     client.replyMessage(event.replyToken, {
       type: 'text',
-      text: message.text,
+      text:'This is a '+ message.type,
     });
   }
 })
