@@ -15,12 +15,12 @@ const client = new Client(config);
 
 
 app.post('/webhook', middleware(config), (req, res) => {
-  // req.body.events // webhook event objects
-  // req.body.destination // user ID of the bot (optional)
   res.send('Webhook success!')
   const event = req.body.events[0];
+  
   if (event.type === 'message') {
     const message = event.message;
+    console.log(message);
     client.replyMessage(event.replyToken, {
       type: 'text',
       text: message.text,
