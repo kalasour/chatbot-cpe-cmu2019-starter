@@ -32,6 +32,7 @@ function handleEvent(event) {
 }
 
 function handleLocationEvent(event) {
+    console.log(event)
   return new Promise((resolve, reject) => {
     restClient.get(`https://fathomless-reaches-36581.herokuapp.com/api?lat=${event.message.latitude}&long=${event.message.longitude}`, (data, response) => {
       if (data) {
