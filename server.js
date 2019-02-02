@@ -26,12 +26,12 @@ app.post('/webhook', middleware(config), (req, res) => {
       "altText": "This is a buttons template",
       "template": {
         "type": "buttons",
-        "thumbnailImageUrl": "https://vignette.wikia.nocookie.net/line/images/b/bb/2015-brown.png/revision/latest?cb=20150808131630",
+        "thumbnailImageUrl": "https://scontent.fbkk14-1.fna.fbcdn.net/v/t1.0-9/49295993_383951468833228_334875838405148672_n.jpg?_nc_cat=100&_nc_ht=scontent.fbkk14-1.fna&oh=a31094d93c5289b4c55f59b8b6ecd974&oe=5CF25E4A",
         "imageAspectRatio": "rectangle",
         "imageSize": "cover",
-        "imageBackgroundColor": "#FFFFFF",
-        "title": "Menu",
-        "text": "Please select",
+        "imageBackgroundColor": "#000000",
+        "title": "Rose",
+        "text": "Kose Ruy",
         "defaultAction": {
           "type": "uri",
           "label": "View detail",
